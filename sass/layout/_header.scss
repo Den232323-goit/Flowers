@@ -1,0 +1,60 @@
+.main-nav {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__link {
+    padding: 50px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+  }
+}
+
+.contact {
+  margin-left: auto;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
+  &__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-left: 29px;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+  }
+  &__item--basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    background: #f4f4f4;
+    border-radius: 500px;
+  }
+  &__basket {
+    width: 21px;
+    height: 21px;
+  }
+}
