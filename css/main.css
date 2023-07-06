@@ -1,16 +1,23 @@
 :root {
   --primary-text-color: #000000;
+  --lines: #ec709a;
 }
 
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
+  margin: 0px;
 }
 
 img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.link.current {
+  -webkit-box-shadow: 0px 1px 0px 0px;
+          box-shadow: 0px 1px 0px 0px;
 }
 
 h1,
@@ -31,6 +38,11 @@ p {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .container {
   width: 100%;
   padding: 0 15px;
@@ -46,23 +58,46 @@ p {
     width: 1140px;
   }
 }
-@media screen and (max-width: 1820px) {
-  .container {
+
+.container-max {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1820px) {
+  .container-max {
     width: 1820px;
   }
+}
+
+.line {
+  width: 205px;
+  height: 1px;
+  margin-bottom: 7px;
+  background-color: var(--lines);
+}
+
+.line-left {
+  width: 205px;
+  height: 1px;
+  margin-left: 85px;
+  margin-bottom: 14px;
+  background-color: var(--lines);
 }
 
 .logo img {
   padding: 16px 0;
   width: 179px;
   height: 72px;
-  margin-right: 120px;
 }
 
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header {
@@ -79,10 +114,10 @@ p {
   display: flex;
 }
 .header__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 80px;
 }
 .header__link {
-  padding: 50px 0;
+  padding: 40px 0;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -106,12 +141,15 @@ p {
   width: 40px;
   height: 40px;
 }
+.contact__icon.whatsapp {
+  margin-right: 15px;
+}
 .contact__item {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-left: 29px;
+  margin-left: 30px;
   color: var(--primary-text-color);
   text-transform: uppercase;
 }
@@ -136,4 +174,21 @@ p {
   padding-right: 2px;
   width: 21px;
   height: 21px;
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: url(/images/hero-bg.jpg) 0 0/100% auto no-repeat;
+}
+.hero__title {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11;
+  width: 541px;
 }/*# sourceMappingURL=main.css.map */

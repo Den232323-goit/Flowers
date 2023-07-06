@@ -1,0 +1,16 @@
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: url(/images/hero-bg.jpg) 0 0/100% auto no-repeat;
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+    width: 541px;
+  }
+}
